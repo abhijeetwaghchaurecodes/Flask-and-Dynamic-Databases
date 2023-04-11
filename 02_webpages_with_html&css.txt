@@ -1,0 +1,67 @@
+HTML is a language which we use to create webpages
+
+We're wireframing our project - means take a pen and a paper and draw a rough sketch of the project, draw a basic template of the project here
+basic information to start the project-
+
+after drawing the basic prototype of the project, we're heading towards the developing a basic template for HTML & related CSS
+
+before that look for the website - https://getbootstrap.com/ 
+this is where CSS implementation becomes so much fun and easy, it has predefined styles for our projects and only we need to do is that give the tags their appropriate 
+classes - as mentioned on this website
+
+HTML - 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Waghchauray & Co.</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+    <style>
+        #banner{
+            height: 360px;
+            width: 100%;
+        }
+        h1, h2{
+            font-weight: bold;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mt-2 mb-4">Waghchauray & Co.</h1>
+        <h2 class="text-center">Careers</h2>
+        <img class="img-fluid" id="banner" src="{{ url_for('static', filename='banner1.jpg') }}">
+        <h2 class="text-center">About Us</h2>
+        <p class="lead">
+            <p class="lead">
+                We're master at our work, we are committed to providing unparalleled financial services to our clients around the globe. With decades of experience in the banking industry, we have built a reputation for reliability, integrity, and innovation that sets us apart from the competition.
+            </p>
+            
+            <p class="lead">
+                Our mission is to empower our clients to achieve their financial goals, whether that be growing their businesses, investing in their future, or realizing their dreams. We do this by providing a wide range of services, including commercial and personal banking, wealth management, and investment banking.
+            </p>
+            
+            <p class="lead">
+                Ultimately, our success is measured by the success of our clients. We take great pride in helping them achieve their financial goals and realize their ambitions, and we remain committed to providing them with the highest levels of service and support. As a world-class bank, we are dedicated to making a positive impact on the world and helping our clients achieve their full potential.
+            </p>
+            
+        </p>
+        <h2 class="text-center mt-2 mb-4">Open Positions</h2>
+        <p>TODO - Show the Jobs here</p>
+
+        <div class="text-center">
+            <button class="btn btn-primary btn-lg">Contact Us</button>
+            <p class="mt-4"> Copyright 2023, Waghchauray & Co.</p>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
