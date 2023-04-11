@@ -1,4 +1,19 @@
 A library of python mainly used to create web applications, 
 
+in this, we've set up our virtual environment in VS Code Editor and installed the Flask Dependancies 
+
 ROUTE - url of any website changes when we access different elements of a website
 
+HERE WE CREATED AND RUN- THE FLASK WEB SERVER 
+
+code - 
+from flask import Flask
+
+app = Flask(__name__)             ------[creates the root directory to be hosted]
+
+@app.route('/')
+def hello_world():
+    return "hello"
+
+if __name__ == "__main__":
+    app.run(host = '0.0.0.0', debug=True)
