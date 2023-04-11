@@ -1,1 +1,4 @@
+A library of python mainly used to create web applications, 
+
+ROUTE - url of any website changes when we access different elements of a website
 
